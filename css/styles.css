@@ -1,0 +1,105 @@
+body {
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #567AE6;
+}
+
+.game {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-options {
+  width: 60%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.game-options h2 {
+  margin-left: 10px;
+}
+
+.game-options button {
+  font-size: 5rem;
+  min-width: 120px;
+  margin: 0 10px;
+  border: 2px solid #B0C3FF;
+  border-radius: 20%;
+  background-color: #C9D6FF;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.game-options button:hover {
+  background-color: #B0C3FF;
+}
+
+.game-choices {
+  width: 60%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: none;
+}
+
+.game-choices #game-choices__player, .game-choices #game-choices__computer {
+  font-size: 1.5rem;
+}
+
+.game-choices #game-choices__result {
+  font-size: 3rem;
+  margin-top: 30px;
+  align-self: center;
+}
+
+.game-score {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-score table {
+  width: 100%;
+  font-size: 1rem;
+  border-collapse: collapse;
+}
+
+.game-score table td, .game-score table th {
+  border: 2px solid #B0C3FF;
+  text-align: left;
+  padding: 8px;
+}
+
+.winText, .game-score table tr #game-score__player {
+  color: #008000;
+}
+
+.loseText, .game-score table tr #game-score__computer {
+  color: #FF0000;
+}
